@@ -191,6 +191,7 @@ header .seleccionador{
 }
 header a[checked=true] .seleccionador{
   animation: seleccionarMenu .5s ease-in-out forwards;
+  animation-delay: .1s;
 }
 @keyframes seleccionarMenu {
   0%{
@@ -222,6 +223,7 @@ main{
   height: 85vh;
   z-index: 200;
   transform: translateX(20px);
+  scroll-behavior: smooth;
 }
 main *{
   font-family: sans-serif;
@@ -349,16 +351,19 @@ main .quienesSomos .junta .integrante[puesto="4"]{
   transform: translateY(-2rem) translateX(4rem) scale(.4);
 }
 main .quienesSomos .junta .integrante[puesto="5"]{
-  transform: translateY(-2.5rem) scale(.4);
-}
-main .quienesSomos .junta .integrante[puesto="6"]{
-  transform: translateY(-2rem) translateX(-4rem) scale(.4);
+  transform: translateY(-3rem) translateX(1.2rem) scale(.4);
 }
 main .quienesSomos .junta .integrante[puesto="7"]{
-  transform: translateY(1rem) translateX(-7rem) scale(.6);
+  transform: translateY(-2rem) translateX(-4rem) scale(.4);
 }
 main .quienesSomos .junta .integrante[puesto="8"]{
+  transform: translateY(1rem) translateX(-7rem) scale(.6);
+}
+main .quienesSomos .junta .integrante[puesto="9"]{
   transform: translateY(5rem) translateX(-5rem) scale(.8);
+}
+main .quienesSomos .junta .integrante[puesto="6"]{
+  transform: translateY(-3rem)  translateX(-1.2rem) scale(.4);
 }
 
 main .comoUnirseaNosotros{
@@ -429,7 +434,7 @@ main .actividades{
   margin: 0 auto;
   width: 40%;
   text-align: center;
-  height: 20rem;
+  height: 30rem;
 }
 main .contacto{
   position: absolute;
