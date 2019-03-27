@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Power Up</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="icon" href="img/logo.jpg">
+  </head>
+  <body>
+    <div class="animacion-inicio">
+      <div class="primer-bloque"></div>
+      <div class="segundo-bloque"></div>
+      <div class="loader">
+        <ul>
+          <li>L</li>
+          <li>O</li>
+          <li>A</li>
+          <li>D</li>
+          <li>I</li>
+          <li>N</li>
+          <li>G</li>
+        </ul>
+      </div>
+    </div>
+    <div class="tercer-bloque"></div>
+    <header>
+      <div class="menu">
+        <a posicion="1" onclick="seleccionarMenu(this)" checked="false">¿Quienes somos?
+          <div class="seleccionador"></div>
+        </a>
+        <a posicion="2" onclick="seleccionarMenu(this)" checked="false">¿Cómo unirte a nosotros?
+          <div class="seleccionador"></div>
+        </a>
+        <a posicion="3" onclick="seleccionarMenu(this)" checked="false">Actividades
+          <div class="seleccionador"></div>
+        </a>
+        <a posicion="4" onclick="seleccionarMenu(this)" checked="false">Contacto
+          <div class="seleccionador"></div>
+        </a>
+
+      </div>
+      <div class="logo">
+        <span>PowerUp</span>
+      </div>
+    </header>
+    <main onscroll="checkScroll(this)">
+      <div class="media">
+
+      </div>
+      <div class="quienesSomos seccion" id="quienesSomos">
+        <img src="img/logo.jpg">
+        <h1>¿Quienes somos?</h1>
+        <p>PowerUp es una asociación vinculada a la Universidad Politécnica de Madrid. Es una asociacion
+        que defiende los derechos y libertades individuales. Provee un espacio en el que expresarse libremente
+        y un ambiente libre de prejuicios. Realizamos todo tipo actividades, charlas, debates, convocatoria a
+        grupos para manifestaciones...</p>
+        <div class="junta">
+          <h2>Nuestra junta</h2>
+          <div class="integrante" puesto="1">
+            <div>
+              <img src="img/ico-male.svg">
+              <h2>Nano</h2>
+              <p>Presidente</p>
+            </div>
+          </div>
+          <div class="integrante" puesto="2">
+            <div>
+              <img src="img/ico-male.svg">
+              <h2>Sebas</h2>
+              <p>Vicepresidente</p>
+            </div>
+          </div>
+          <div class="integrante" puesto="3">
+            <div>
+              <img src="img/ico-female.svg">
+              <h2>Cris</h2>
+              <p>Tesorera</p>
+            </div>
+          </div>
+          <div class="integrante" puesto="4">
+            <div>
+              <img src="img/ico-male.svg">
+              <h2>Guille</h2>
+              <p>Secretario</p>
+            </div>
+          </div>
+          <div class="integrante" puesto="5">
+            <div>
+              <img src="img/ico-male.svg">
+              <h2>Javi</h2>
+              <p>Vocal</p>
+            </div>
+          </div>
+          <div class="integrante" puesto="6">
+            <div>
+              <img src="img/ico-female.svg">
+              <h2>Pipi</h2>
+              <p>Vocal</p>
+            </div>
+          </div>
+          <div class="integrante" puesto="7">
+            <div>
+              <img src="img/ico-male.svg">
+              <h2>Iván</h2>
+              <p>Vocal</p>
+            </div>
+          </div>
+          <div class="integrante" puesto="8">
+            <div>
+              <img src="img/ico-male.svg">
+              <h2>Andrés</h2>
+              <p>Vocal</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="comoUnirseaNosotros seccion" id="comoUnirseaNosotros">
+        <h1>¿Cómo unirte a nosotros?</h1>
+        <p>Actualmente tenemos un local en Vallecas, en la escuela tecnica superior en sistemas informaticos
+        (E.T.S.I.S.I.), tambien puedes contactar con nostros vía correo electrónico, o si quieres participar dia
+      a de nuestro grupo, puedes acceder al grupo de telegram en la zona de contacto.</p>
+        <div class="contenedor-mapa">
+          <div class="map">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1c52jnEZlsHLGptfH69WxaC_NnAyrcfbE" width="500" height="500"></iframe>
+            <div class="pantalla"></div>
+          </div>
+          <div class="botones-mapa">
+            <div>
+              <a id="en-coche" target="_blank" href="https://www.google.es/maps/dir//Escuela+Universitaria+De+Ingenier%C3%ADa+T%C3%A9cnica+De+Telecomunicaci%C3%B3n,+A-3,+Km.+7,+28031+Madrid/@40.3901677,-3.6313678,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0xd42250a23c25a3b:0x6ed6949990ffe9ce!2m2!1d-3.6284479!2d40.3897071!3e0?hl=es">
+                <img src="img/ico-car.svg" alt="" style="width:40px; height: 40px;">
+              </a>
+              <a id="en-bus" target="_blank" href="https://www.google.es/maps/dir//Escuela+Universitaria+De+Ingenier%C3%ADa+T%C3%A9cnica+De+Telecomunicaci%C3%B3n,+A-3,+Km.+7,+28031+Madrid/@40.3898167,-3.6984883,12z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0xd42250a23c25a3b:0x6ed6949990ffe9ce!2m2!1d-3.6284479!2d40.3897071!3e3?hl=es">
+                <img src="img/ico-bus.svg" alt="" style="width:40px; height: 40px;">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="actividades seccion" id="actividades">
+        <h1>Actividades</h1>
+        <p>En este apartado, poblicaremos un resumen de las actividades que realicemos
+        y un adelanto de las que vayamos a hacer en un futuro.</p>
+      </div>
+      <div class="contacto seccion" id="contacto">
+        <h1>Contacto:</h1>
+        <a target="_self" href="mailto:power.up.upm@gmail.com">
+          <img src="img/ico-mail.svg"/>
+        </a>
+        <a target="_blank" href="https://www.instagram.com/pooweer_up/?hl=es">
+          <img src="img/ico-instagram.svg"/>
+        </a>
+        <a target="_blank" href="https://t.me/powerupupm">
+          <img src="img/ico-paper-plane.svg"/>
+        </a>
+      </div>
+    </main>
+    <script src="scripts/scripts.js"></script>
+  </body>
+</html>
